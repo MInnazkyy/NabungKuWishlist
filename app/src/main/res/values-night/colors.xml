@@ -1,0 +1,9 @@
+<resources>
+    <color name="bg">#0A1416</color>
+    <color name="card">#142022</color>
+    <color name="chip">#1E2E30</color>
+    <color name="teks">#FFFFFF</color>
+    <color name="teks_redup">#9FB3B3</color>
+    <color name="hijau">#4ADE80</color>
+    <color name="merah">#F87171</color>
+</resources>

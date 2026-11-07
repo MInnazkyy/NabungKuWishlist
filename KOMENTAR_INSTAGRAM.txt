@@ -1,0 +1,19 @@
+SharedPreferences pada Aplikasi Mobile – NabungKu Wishlist: Aplikasi Tabungan Impian
+Tugas P10 Pemrograman Mobile · Prodi STI · Universitas Muhammadiyah Kotabumi
+Nama : Zaki Maulana Riyadi
+NIM : 2459201129
+Kelas : 5D
+Dosen : Ryan Aji Wijaya, S.Kom., M.M.S.I
+
+Keterangan:
+1 Banyak orang susah menabung untuk barang impian (PC setup, liburan) karena progresnya tidak terlihat. NabungKu Wishlist membuat target/amplop tabungan dengan persen progres, plus pengaturan yang nyaman dipakai tiap hari.
+2 SharedPreferences: nama, mode gelap, sembunyikan saldo, pengingat nabung 19:00, nominal setor cepat, warna tema, status onboarding, streak harian, jumlah app dibuka. Alasannya: kecil, sederhana (key-value), dan harus langsung terbaca saat app dibuka.
+3 SQLite: transaksi setor/tarik, target & amplop, riwayat. Alasannya: datanya banyak, berulang, dan butuh query (SUM, JOIN, ORDER BY). Saldo tidak disimpan di prefs, tapi dihitung dari SQLite supaya selalu akurat. Foto impian & foto bukti setor: filenya disalin ke penyimpanan internal app, SQLite hanya menyimpan path-nya (bukan fotonya).
+4 Semua akses lewat kelas PrefsManager. Simpan pakai apply() (asinkron, tidak membekukan UI). Dibaca di onResume() supaya perubahan di Profil (tema, saldo tersembunyi, nominal setor cepat) langsung muncul di Beranda.
+5 Bukti: ubah tema + mode gelap + nominal setor cepat, tekan Simpan, lalu Force Stop. Buka lagi: pengaturan tetap ada, dan transaksi tetap aman di SQLite.
+
+Kode: [LINK GITHUB KAMU]
+
+Menurut kamu, data apa lagi yang cocok disimpan di SharedPreferences, bukan di database? 👇
+
+#android #java #pemrogramanmobile #sharedpreferences #umko
